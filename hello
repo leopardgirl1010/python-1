@@ -2,4 +2,4 @@
 
 import colors as c 
 
-print(c.rc() + "Hello World of" + c.rc() +  " Minecraft" + c.reset)
+print(c.rc() + "Hello" + c.rc() + " World" + c.rc() + " of" + c.rc() +  " Minecraft" + c.reset)
