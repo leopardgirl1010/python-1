@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+import colors as c 
+
+print(c.o + "Hello World of" + c.m +  " Minecraft" + c.reset)
