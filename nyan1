@@ -3,5 +3,5 @@
 import colors as c
 
 while True:
-    print(c.rc() + "Meow" + c.v , end=  "   #")
+    print(c.rc() + "Meow" + c.v , end=  "                                                  ")
 
