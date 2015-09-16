@@ -14,6 +14,13 @@ c.c + 'Sorry, Im playing minecraft right now' + c.x,
 c.g + 'Are you crazy, of course!' + c.x,
 c.g + 'Theres a 99% chance' + c.x,
 c.r + 'NEVER!' + c.x,
+c.c + 'let me see...' + c.x,
+c.v + 'What?' +  c.x,
+c.v + 'Ask Siri' + c.x,
+c.g + 'I sence it' +  c.x,
+c.r + 'Only a 1% chance' + c.x,
+c.v + """There was once a pig named Gizmo, who always dreamed of becoming a  unicorn.
+One day it rained meteors and his chance came he followed his dream..."""
 ]
 while True:
     input( c.m + '-----> ' + c.y)
