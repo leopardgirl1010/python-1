@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import random
+import colors as c
+
+print( c.clear +  c.v +  """
+Welcome to the #magic""" + c.rc() +  """ 8""" +  c.v + """ ball
+Enter your question below!""")
+
+answers = [ c.g + 'yes' + c.x,
+c.r + 'No' +  c.x, 
+c.c + 'What do u think?' +  c.x,
+c.c + 'Sorry, Im playing minecraft right now' + c.x,
+c.g + 'Are you crazy, of course!' + c.x,
+c.g + 'Theres a 99% chance' + c.x,
+c.r + 'NEVER!' + c.x,
+]
+while True:
+    input( c.m + '-----> ' + c.y)
+    answer = random.choice(answers)
+    print( c.x + answer)
