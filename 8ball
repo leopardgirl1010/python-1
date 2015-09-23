@@ -33,12 +33,19 @@ c.c + "#Tell y'a later" + c.x,
 ]
 
 try:
+
      while True:
         question = input( c.m + '-----> ' + c.y)
         if "death" in question or "die" in question or "Death" in question or "Die" in question:
             print(c.base3 + "Sorry can not predict death" + c.x )
         elif "love" in question or "Love" in question:
             print(c.m + "I sence love secrets..." + c.x)
-        answer = random.choice(answers)
-        print( c.x + answer)
-         
+        elif "Pink Sheep" in question or "PINKSHEEP" in question or "pink sheep" in question:
+            print(c.m + "For it is I the Pink Sheep plz join my server I am the wonderfull mascott")
+
+        else:
+            answer = random.choice(answers)
+            print( c.x + answer) 
+except KeyboardInterrupt:
+    print(c.b + "Hope to see you soon or playing Minecraft!")
+    exit()
