@@ -20,9 +20,25 @@ c.v + 'Ask Siri' + c.x,
 c.g + 'I sence it' +  c.x,
 c.r + 'Only a 1% chance' + c.x,
 c.v + """There was once a pig named Gizmo, who always dreamed of becoming a  unicorn.
-One day it rained meteors and his chance came he followed his dream..."""
+One day it rained meteors and his chance came he followed his dream...""" + c.x,
+c.v + "I like gerbls" + c.x,
+c.v + "Maybe..." + c.x,
+c.r + "WHAT ARE YOU THINKING NO!!" + c.x,
+c.g + "Of course!!" + c.x,
+c.m + "LOL why not!" + c.x,
+c.m + " <3" + c.x,
+c.r + "#NEVER!" + c.x,
+c.g + "#YEA!" + c.x,
+c.c + "#Tell y'a later" + c.x,
 ]
-while True:
-    input( c.m + '-----> ' + c.y)
-    answer = random.choice(answers)
-    print( c.x + answer)
+
+try:
+     while True:
+        question = input( c.m + '-----> ' + c.y)
+        if "death" in question or "die" in question or "Death" in question or "Die" in question:
+            print(c.base3 + "Sorry can not predict death" + c.x )
+        elif "love" in question or "Love" in question:
+            print(c.m + "I sence love secrets..." + c.x)
+        answer = random.choice(answers)
+        print( c.x + answer)
+         
