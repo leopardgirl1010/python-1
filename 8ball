@@ -20,7 +20,7 @@ c.v + 'Ask Siri' + c.x,
 c.g + 'I sence it' +  c.x,
 c.r + 'Only a 1% chance' + c.x,
 c.v + """There was once a pig named Gizmo, who always dreamed of becoming a  unicorn.
-One day it rained meteors and his chance came he followed his dream...""" + c.x,
+One day it rained cows and his chance came he followed his dream..""" + c.x,
 c.v + "I like gerbls" + c.x,
 c.v + "Maybe..." + c.x,
 c.r + "WHAT ARE YOU THINKING NO!!" + c.x,
@@ -30,22 +30,69 @@ c.m + " <3" + c.x,
 c.r + "#NEVER!" + c.x,
 c.g + "#YEA!" + c.x,
 c.c + "#Tell y'a later" + c.x,
+c.r + "Nope" + c.x,
+c.g + "Yea" + c.x,
+c.m + "M" + c.o + "e" + c.m + "o" + c.o + "w" + c.x,
+c.g + "Honestly, Yes" + c.x,
+c.r + "Honestly, No" + c.x,
+c.m + """ 
+           +      o     +              o   
+               +             o     +       +
+               o          +
+              o  +           +        +
+             +        o     o       +        o
+                 -_-_-_-_-_-_-_,------,      o 
+                 _-_-_-_-_-_-_-|   /\_/\  
+                 -_-_-_-_-_-_-~|__( ^ .^)  +     +  
+                 _-_-_-_-_-_-_-""  ""      
+              +      o         o   +       o
+                  +         +
+             o        o         o      o     +
+                 o           +
+             +      +     o        o      +    
+                           """ +  c.x,
+c.r + "#No4ever"
 ]
 
+def ask(prompt):
+    answer = input(prompt).strip().lower()
+    return answer
+def bye():
+    print("Bye! Hope to see u soon!")
+    exit()
 try:
 
      while True:
-        question = input( c.m + '-----> ' + c.y)
-        if "death" in question or "die" in question or "Death" in question or "Die" in question:
-            print(c.base3 + "Sorry can not predict death" + c.x )
-        elif "love" in question or "Love" in question:
+        question = ask( c.m + '-----> ' + c.y)
+        if question == 'bye' or question == 'goodbye':
+             bye()
+        elif "death" in question or "die" in question:
+            print(c.base3 + "Sorry can not predict death @xxxx[{:::::::::::::::::::::>" + c.x )
+        elif "love" in question:
             print(c.m + "I sence love secrets..." + c.x)
-        elif "Pink Sheep" in question or "PINKSHEEP" in question or "pink sheep" in question:
+        elif "pinksheep" in question or "pink sheep" in question:
             print(c.m + "For it is I the Pink Sheep plz join my server I am the wonderfull mascott")
-
+        elif "nyan" in question or "nyancat" in question:
+            print(c.m + """
+                            +      o     +              o   
+                                +             o     +       +
+                                o          +
+                                    o  +           +        +
+                              +        o     o       +        o
+                                 -_-_-_-_-_-_-_,------,      o 
+                                 _-_-_-_-_-_-_-|   /\_/\  
+                                 -_-_-_-_-_-_-~|__( ^ .^)  +     +  
+                                 _-_-_-_-_-_-_-""  ""      
+                                 +      o         o   +       o
+                                 +         +
+                                 o        o         o      o     +
+                                     o           +
+                                 +      +     o        o      +    """ + c.x )
+        elif "^[[A" in question:
+        print(c.v + "Were you mistaken?" + c.x)
         else:
             answer = random.choice(answers)
             print( c.x + answer) 
 except KeyboardInterrupt:
-    print(c.b + "Hope to see you soon or playing Minecraft!")
-    exit()
+   print()
+   bye()
