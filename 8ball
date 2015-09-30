@@ -35,23 +35,7 @@ c.g + "Yea" + c.x,
 c.m + "M" + c.o + "e" + c.m + "o" + c.o + "w" + c.x,
 c.g + "Honestly, Yes" + c.x,
 c.r + "Honestly, No" + c.x,
-c.m + """ 
-           +      o     +              o   
-               +             o     +       +
-               o          +
-              o  +           +        +
-             +        o     o       +        o
-                 -_-_-_-_-_-_-_,------,      o 
-                 _-_-_-_-_-_-_-|   /\_/\  
-                 -_-_-_-_-_-_-~|__( ^ .^)  +     +  
-                 _-_-_-_-_-_-_-""  ""      
-              +      o         o   +       o
-                  +         +
-             o        o         o      o     +
-                 o           +
-             +      +     o        o      +    
-                           """ +  c.x,
-c.r + "#No4ever"
+c.r + "#No4ever" + c.x,
 ]
 
 def ask(prompt):
