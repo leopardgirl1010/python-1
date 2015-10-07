@@ -3,15 +3,12 @@
 import random
 import colors as c
 
-print( c.clear +  c.v +  """
-Welcome to the #magic""" + c.rc() +  """ 8""" +  c.v + """ ball
-Enter your question below!""")
+
+
+
 
 answers = [ c.g + 'yes' + c.x,
-c.r + 'No' +  c.x, 
-c.c + 'What do u think?' +  c.x,
-c.c + 'Sorry, Im playing minecraft right now' + c.x,
-c.g + 'Are you crazy, of course!' + c.x,
+c.r + "No" + c.x,
 c.g + 'Theres a 99% chance' + c.x,
 c.r + 'NEVER!' + c.x,
 c.c + 'let me see...' + c.x,
@@ -33,10 +30,20 @@ c.c + "#Tell y'a later" + c.x,
 c.r + "Nope" + c.x,
 c.g + "Yea" + c.x,
 c.m + "M" + c.o + "e" + c.m + "o" + c.o + "w" + c.x,
+c.r + 'No' +  c.x, 
+c.c + 'What do u think?' +  c.x,
+c.c + 'Sorry, Im playing minecraft right now' + c.x,
+c.g + 'Are you crazy, of course!' + c.x,
 c.g + "Honestly, Yes" + c.x,
 c.r + "Honestly, No" + c.x,
 c.r + "#No4ever" + c.x,
+c.r + "IM NOT UR FRIEND" + c.x,
 ]
+
+def welcome():
+    print( c.clear +  c.v +  """
+    Welcome to the #magic""" + c.rc() +  """ 8""" +  c.v + """ ball
+    Enter your question below!""")
 
 def ask(prompt):
     answer = input(prompt).strip().lower()
@@ -45,7 +52,7 @@ def bye():
     print("Bye! Hope to see u soon!")
     exit()
 try:
-
+     welcome()
      while True:
         question = ask( c.m + '-----> ' + c.y)
         if question == 'bye' or question == 'goodbye':
@@ -70,8 +77,9 @@ try:
                                  +      o         o   +       o
                                  +         +
                                  o        o         o      o     +
-                                     o           +
-                                 +      +     o        o      +    """ + c.x )
+                                +      +     o        o      +    """ + c.x )
+        elif "10" in question:
+            print(c.o + "Thats My Lucky Number" + c.x )
         else:
             answer = random.choice(answers)
             print( c.x + answer) 
